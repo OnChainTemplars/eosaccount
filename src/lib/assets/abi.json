@@ -1,0 +1,290 @@
+{
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "accounts",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account_name",
+                    "type": "name"
+                },
+                {
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "name": "avatar",
+                    "type": "string"
+                },
+                {
+                    "name": "desc",
+                    "type": "string"
+                },
+                {
+                    "name": "modifier",
+                    "type": "name"
+                },
+                {
+                    "name": "status",
+                    "type": "uint64"
+                },
+                {
+                    "name": "verified",
+                    "type": "uint64"
+                },
+                {
+                    "name": "url",
+                    "type": "string"
+                },
+                {
+                    "name": "price",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "addblack",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account_name",
+                    "type": "name"
+                },
+                {
+                    "name": "verifier",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "addverifier",
+            "base": "",
+            "fields": [
+                {
+                    "name": "verifier",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "applyverify",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account_name",
+                    "type": "name"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "black",
+            "base": "",
+            "fields": [
+                {
+                    "name": "black_account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "delblack",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account_name",
+                    "type": "name"
+                },
+                {
+                    "name": "verifier",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "investigate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account_name",
+                    "type": "name"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                },
+                {
+                    "name": "propose_time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "reset",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "setbymaster",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account_name",
+                    "type": "name"
+                },
+                {
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "name": "avatar",
+                    "type": "string"
+                },
+                {
+                    "name": "desc",
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "update",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account_name",
+                    "type": "name"
+                },
+                {
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "name": "avatar",
+                    "type": "string"
+                },
+                {
+                    "name": "desc",
+                    "type": "string"
+                },
+                {
+                    "name": "modifier",
+                    "type": "name"
+                },
+                {
+                    "name": "url",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "verifiers",
+            "base": "",
+            "fields": [
+                {
+                    "name": "verifier",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "verify",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account_name",
+                    "type": "name"
+                },
+                {
+                    "name": "verifier",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addblack",
+            "type": "addblack",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addverifier",
+            "type": "addverifier",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "applyverify",
+            "type": "applyverify",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delblack",
+            "type": "delblack",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "reset",
+            "type": "reset",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setbymaster",
+            "type": "setbymaster",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "update",
+            "type": "update",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "verify",
+            "type": "verify",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accounts",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": [],
+            "type": "accounts"
+        },
+        {
+            "name": "black",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": [],
+            "type": "black"
+        },
+        {
+            "name": "investigate",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": [],
+            "type": "investigate"
+        },
+        {
+            "name": "verifiers",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": [],
+            "type": "verifiers"
+        }
+    ],
+    "ricardian_clauses": [],
+    "error_messages": [],
+    "abi_extensions": [],
+    "variants": [],
+    "action_results": []
+}
