@@ -7,48 +7,34 @@
 </script>
 
 <div class="account">
-    <div>
-        <h3>
-            {data.title}
-        </h3>
-        <div class="avatar">
-            <img alt="Avatar" src={data.avatar} />
-        </div>
-        <div>
-            <p>{data.desc}</p>
-        </div>
-        {#if data.url}
-            <div class="url">
-                {#if data.url.website}
-                    <a href={data.url.website} target="_blank">
-                        <Icon
-                            src={TrOutlineWorldHeart}
-                            size="32"
-                            color="black"
-                        />
-                    </a>
-                {/if}
-                {#if data.url.telegram}
-                    <a href={data.url.telegram} target="_blank">
-                        <Icon
-                            src={SiTelegram}
-                            size="32"
-                            color="black"
-                        />
-                    </a>
-                {/if}
-                {#if data.url.twitter}
-                    <a href={data.url.twitter} target="_blank">
-                        <Icon
-                            src={SiTwitter}
-                            size="32"
-                            color="black"
-                        />
-                    </a>
-                {/if}
-            </div>
-        {/if}
+    <h3>
+        {data.title}
+    </h3>
+    <div class="avatar">
+        <img alt="Avatar" src={data.avatar} />
     </div>
+    <div>
+        <p>{data.desc}</p>
+    </div>
+    {#if data.url}
+        <div class="url">
+            {#if data.url.website}
+                <a href={data.url.website} target="_blank">
+                    <Icon src={TrOutlineWorldHeart} size="32" color="black" />
+                </a>
+            {/if}
+            {#if data.url.telegram}
+                <a href={data.url.telegram} target="_blank">
+                    <Icon src={SiTelegram} size="32" color="black" />
+                </a>
+            {/if}
+            {#if data.url.twitter}
+                <a href={data.url.twitter} target="_blank">
+                    <Icon src={SiTwitter} size="32" color="black" />
+                </a>
+            {/if}
+        </div>
+    {/if}
 </div>
 
 <style>
