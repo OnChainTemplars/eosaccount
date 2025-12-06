@@ -43,8 +43,8 @@
 
 <style>
     .account button {
-        background-color: transparent;
         border: 0;
+        background-color: transparent;
     }
 
     .account button:hover {
@@ -55,9 +55,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: auto;
         max-width: 300px;
         max-height: 300px;
+        margin: auto;
         overflow: hidden;
     }
 
