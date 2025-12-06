@@ -54,14 +54,6 @@
         padding: 0 35px;
     }
 
-    .edit button {
-        background-color: black;
-        color: white;
-        padding: 5px;
-        border: 0;
-        border-radius: 10px;
-    }
-
     .item > input {
         padding: 5px;
         border: 0;
@@ -77,5 +69,17 @@
         width: 100%;
         margin-top: 20px;
         padding: 0 35px;
+    }
+
+    .buttons button {
+        background-color: black;
+        color: white;
+        padding: 5px;
+        border: 0;
+        border-radius: 10px;
+    }
+
+    .buttons button:hover {
+        cursor: pointer;
     }
 </style>
