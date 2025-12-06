@@ -42,13 +42,11 @@
 </div>
 
 <style>
+    @import "$lib/styles/style.css";
+
     .account button {
         border: 0;
         background-color: transparent;
-    }
-
-    .account button:hover {
-        cursor: pointer;
     }
 
     .avatar {

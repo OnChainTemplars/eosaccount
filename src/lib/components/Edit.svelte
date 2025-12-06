@@ -37,6 +37,8 @@
 </div>
 
 <style>
+    @import "$lib/styles/style.css";
+
     .edit {
         display: flex;
         flex-direction: column;
@@ -54,14 +56,6 @@
         padding: 0 35px;
     }
 
-    .item > input {
-        padding: 5px;
-        border: 0;
-        border-radius: 10px;
-        background: #f3f6f4;
-        text-align: center;
-    }
-
     .buttons {
         box-sizing: border-box;
         display: flex;
@@ -69,17 +63,5 @@
         width: 100%;
         margin-top: 20px;
         padding: 0 35px;
-    }
-
-    .buttons button {
-        background-color: black;
-        color: white;
-        padding: 5px;
-        border: 0;
-        border-radius: 10px;
-    }
-
-    .buttons button:hover {
-        cursor: pointer;
     }
 </style>

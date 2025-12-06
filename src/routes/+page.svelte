@@ -40,47 +40,17 @@
 </div>
 
 <style>
-    .block {
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 5px 15px;
-        border-radius: 10px;
-        text-align: center;
-        background-color: white;
-    }
+    @import "$lib/styles/style.css";
 
     .block input {
         width: 100%;
-        padding: 5px;
-        border: 0;
-        border-radius: 10px;
-        text-align: center;
-        background: #f3f6f4;
     }
 
-    .block button {
-        padding: 5px;
-        border: 0;
-        border-radius: 10px;
-        background-color: black;
-        color: white;
-    }
-
-    .block button:hover {
-        cursor: pointer;
-    }
-
-    .head {
+    .head,
+    .search {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 35px;
-    }
-
-    .search {
-        display: flex;
-        justify-content: space-around;
         padding: 0 35px;
     }
 </style>
