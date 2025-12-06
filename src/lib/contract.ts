@@ -1,4 +1,4 @@
-import { NODE_URL } from "$lib"
+import { ACCOUNT_INFO, NODE_URL } from "$lib"
 import type { AccountData, AccountURL } from "$lib"
 import { Table } from "@wharfkit/contract"
 import { APIClient } from "@wharfkit/antelope"
@@ -7,7 +7,7 @@ import abi from "./assets/abi.json"
 
 const table = new Table({
     abi,
-    account: "account.info",
+    account: ACCOUNT_INFO,
     name: "accounts",
     client: new APIClient({ url: NODE_URL }),
 })

@@ -1,14 +1,13 @@
 <script lang="ts">
+    import { ACCOUNT_INFO } from "$lib";
     import { appState } from "../state.svelte";
     import { getAccountInfo } from "$lib/contract";
     import { isLoggedIn, restoreSession, login, logout } from "$lib/session.svelte";
     import Account from "$lib/components/Account.svelte";
     import Edit from "$lib/components/Edit.svelte";
 
-    const accountInfo = "account.info";
-
-    let account: string = $state(accountInfo);
-    let promise = $state(getAccountInfo(accountInfo));
+    let account: string = $state(ACCOUNT_INFO);
+    let promise = $state(getAccountInfo(ACCOUNT_INFO));
 </script>
 
 <div class="block" onload={restoreSession}>

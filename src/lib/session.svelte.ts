@@ -1,4 +1,4 @@
-import { NODE_URL } from "$lib"
+import { NODE_URL, NETWORK_ID, ACCOUNT_INFO } from "$lib"
 import type { AccountData } from "$lib"
 import { Session, SessionKit } from "@wharfkit/session"
 import { WebRenderer } from "@wharfkit/web-renderer"
@@ -10,7 +10,7 @@ const sessionKit = new SessionKit({
     appName: "eosaccount",
     chains: [
         {
-            id: "aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906",
+            id: NETWORK_ID,
             url: NODE_URL,
         },
     ],
@@ -41,11 +41,12 @@ export async function logout() {
 export async function update(accountData: AccountData) {
     if (session) {
         const data = {
-            account: "account.info",
+            account: ACCOUNT_INFO,
             name: "update",
             authorization: [session.permissionLevel],
             data: {
                 ...accountData,
+                modifier: session.actor.toString(),
                 url: JSON.stringify(accountData.url)
             },
         }
