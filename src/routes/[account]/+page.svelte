@@ -20,5 +20,5 @@
 </div>
 
 <style>
-    @import '$lib/styles/style.css';
+    @import "$lib/styles/style.css";
 </style>
